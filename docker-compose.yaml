@@ -4,7 +4,7 @@ services:
   dev:
     image: "node:10"
     ports:
-      - "8888:8000"
+      - "6000:8000"
     volumes:
       - ./:/app
     command: "/bin/bash"
@@ -13,7 +13,7 @@ services:
   server:
     image: "node:10"
     ports:
-      - "8888:8000"
+      - "6000:8000"
     volumes:
       - ./:/app
     command: "node test.js"
